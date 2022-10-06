@@ -3,9 +3,7 @@ import {
   displayBooks, displayForm, contact, displayContact,
   showBooksOnly, showOnlyContact, showOnlyForm,
 } from './modules/view.js';
-
 import { DateTime } from './modules/luxon.js';
-
 const bookItems = document.querySelector('#book-list');
 const awesomeHeading = document.querySelector('#awesome');
 class Book {
@@ -32,11 +30,9 @@ form.addEventListener('submit', (e) => {
     const book = new Book(title, author);
     awesomeHeading.style.display = 'block';
     bookItems.style.display = 'none';
-
     // adding book to the list
     displayBooksControl.addBookToList(book);
     // adding book to the local storage
-
     addBook(book);
     // clear all the fields
     displayBooksControl.clearFields();

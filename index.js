@@ -29,12 +29,10 @@ form.addEventListener('submit', (e) => {
   const author = document.querySelector('#author').value;
   // validating form fields
   if (title === '' || author === '') {
-    // eslint-disable-next-line no-alert
-    alert('You must fill in all fields');
   } else {
     const book = new Book(title, author);
     awesomeHeading.style.display = 'block';
-    bookItems.style.display = 'flex';
+    bookItems.style.display = 'none';
 
     // adding book to the list
     displayBooksControl.addBookToList(book);

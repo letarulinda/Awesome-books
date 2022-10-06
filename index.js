@@ -4,6 +4,7 @@ import {
   showBooksOnly, showOnlyContact, showOnlyForm,
 } from './modules/view.js';
 import { DateTime } from './modules/luxon.js';
+
 const bookItems = document.querySelector('#book-list');
 const awesomeHeading = document.querySelector('#awesome');
 class Book {
@@ -24,6 +25,7 @@ form.addEventListener('submit', (e) => {
 
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
+
   // validating form fields
   if (title === '' || author === '') {
   } else {

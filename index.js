@@ -8,7 +8,6 @@ import { DateTime } from './modules/luxon.js';
 
 const bookItems = document.querySelector('#book-list');
 const awesomeHeading = document.querySelector('#awesome');
-
 class Book {
   constructor(title, author) {
     this.title = title;

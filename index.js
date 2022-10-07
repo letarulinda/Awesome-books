@@ -28,7 +28,7 @@ form.addEventListener('submit', (e) => {
 
   // validating form fields
   if (title === '' || author === '') {
-    return;
+    return 'This must be filled'
   } else {
     const book = new Book(title, author);
     awesomeHeading.style.display = 'block';
@@ -41,7 +41,6 @@ form.addEventListener('submit', (e) => {
     displayBooksControl.clearFields();
   }
 });
-
 
 // remove the book
 document.querySelector('#book-list').addEventListener('click', (e) => {

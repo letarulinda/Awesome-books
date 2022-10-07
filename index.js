@@ -36,7 +36,7 @@ form.addEventListener('submit', (e) => {
   addBook(book);
   // clear all the fields
   displayBooksControl.clearFields();
-  
+
 });
 
 // remove the book

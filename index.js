@@ -27,19 +27,16 @@ form.addEventListener('submit', (e) => {
   const author = document.querySelector('#author').value;
 
   // validating form fields
-  if (title === '' || author === '') {
-    return 'This must be filled'
-  } else {
-    const book = new Book(title, author);
-    awesomeHeading.style.display = 'block';
-    bookItems.style.display = 'none';
-    // adding book to the list
-    displayBooksControl.addBookToList(book);
-    // adding book to the local storage
-    addBook(book);
-    // clear all the fields
-    displayBooksControl.clearFields();
-  }
+  const book = new Book(title, author);
+  awesomeHeading.style.display = 'block';
+  bookItems.style.display = 'none';
+  // adding book to the list
+  displayBooksControl.addBookToList(book);
+  // adding book to the local storage
+  addBook(book);
+  // clear all the fields
+  displayBooksControl.clearFields();
+  
 });
 
 // remove the book

@@ -1,7 +1,7 @@
 
 # Awesome Books
 
-> This my Awesome Books web app. You can add, view and remove books from the list.
+> This is a todolist that allows you to add and remove todos from the list.
 
 
 ## Built With
@@ -9,6 +9,7 @@
 - HTML & CSS
 - Javascript
 - Node
+- Webpack
 
 ## Getting Started
 
